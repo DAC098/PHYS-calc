@@ -1,3 +1,5 @@
+const Vector = require('./Vector.js');
+
 
 const PERMITTIVITY_CONST = 8.85e-12;
 const COULOMBS_CONST = 1 / (4 * Math.PI * PERMITTIVITY_CONST);
@@ -13,32 +15,6 @@ console.log('COULOMBS_CONST:',COULOMBS_CONST);
 function getType(variable) {
 	return Object.prototype.toString.call(variable).match(/\s([a-zA-Z]+)/)[1].toLowerCase();
 }
-
-function calcElectricFieldForDipole(charge1,charge2,distance) {
-	return
-}
-
-function Vector() {
-
-	this.stuff = function stuff() {
-		console.log('stuff');
-		console.log('name:',this.name);
-		console.log('caller:',this.caller);
-		console.log('displayName:',this.displayName);
-	}
-
-};
-
-var v1 = new Vector();
-var test = v1.stuff();
-var date = new Date();
-var array = [];
-
-console.log('v1 type:',getType(v1));
-console.log('v1 constructor:',v1.constructor.name);
-console.log('date:',date.constructor.name);
-console.log('array:',array.constructor.name);
-console.log('array constructor:',array.constructor);
 
 const calc = {
 	ElectroStaticForce: function(charge1,charge2,distance) {
