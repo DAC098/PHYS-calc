@@ -26,6 +26,9 @@ const calc = {
 	MagOfElectricField: function(charge,distance) {
 		return Math.abs(calc.ElectricField(charge,distance));
 	},
+	ElectricFieldOfDipole: function(charge,charge_dis,distance) {
+		return (1 / (2 * Math.PI * PERMITTIVITY_CONST)) * ((charge * distance) / (distance ** 3));
+	}
 }
 
 console.log('test 2:',calc.ElectroStaticForce(4,8,10));
@@ -36,3 +39,8 @@ console.log(`test 4:
 	charge 1 =  2Q: ${calc.ElectricField(-2 * CHARGE_CONST,2)}
 	charge 2 = -2Q: ${calc.ElectricField(2 * CHARGE_CONST,2)}
 	charge 3 =  4Q: ${calc.ElectricField(4 * CHARGE_CONST,2)}`);
+
+let dipole_charge = 200,
+	dipole_dis = 6e3,
+	distance = 30e3;
+console.log(`dipole: ${calc.ElectricFieldOfDipole(dipole_charge,dipole_dis,distance)}`);
