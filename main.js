@@ -43,4 +43,4 @@ console.log(`test 4:
 let dipole_charge = 200,
 	dipole_dis = 6e3,
 	distance = 30e3;
-console.log(`dipole: ${calc.ElectricFieldOfDipole(dipole_charge,dipole_dis,distance)}`);
+console.log(`dipole: ${calc.ElectricFieldOfDipole(dipole_charge,2 * dipole_dis,distance)}`);

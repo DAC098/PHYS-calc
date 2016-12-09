@@ -162,18 +162,18 @@ class Vector {
 
 let test = new Vector({i:2,j:3,k:7});
 
-console.log('prototype:',Vector.prototype);
-
-console.log('data:',test);
-
-console.log('add:',test.addVectors({i:8,j:0,k:9}));
-
-console.log('scalar:',Vector.multByScalar({i:7,j:3},3));
-
-console.log('cross product:',Vector.crossProduct({i:2,j:3,k:4},{i:5,j:6,k:7}));
-
-console.log('dot product:',Vector.dotProduct({i:-6,j:8},{i:5,j:12}));
-
-console.log('magnitude:',test.getMagnitude());
+// console.log('prototype:',Vector.prototype);
+//
+// console.log('data:',test);
+//
+// console.log('add:',test.addVectors({i:8,j:0,k:9}));
+//
+// console.log('scalar:',Vector.multByScalar({i:7,j:3},3));
+//
+// console.log('cross product:',Vector.crossProduct({i:2,j:3,k:4},{i:5,j:6,k:7}));
+//
+// console.log('dot product:',Vector.dotProduct({i:-6,j:8},{i:5,j:12}));
+//
+// console.log('magnitude:',test.getMagnitude());
 
 module.exports = Vector
